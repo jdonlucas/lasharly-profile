@@ -8,7 +8,7 @@ import Home from './pages/Home';
 import EzeCafe from './pages/EzeCafe';
 import Contacto from './pages/Contacto';
 import LaSharly from './pages/LaSharly';
-import Uam from './pages/Home';
+import Uam from './pages/Uam';
 import Menu from './pages/Menu';
 
 import Navbar from './elements/Navbar';

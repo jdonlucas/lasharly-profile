@@ -4,6 +4,7 @@
   --background-color: #000000;
   --pink-color: #E17180;
   --highlight-color: #FFF;
+  --gray-color: #5C4F51;
 }
 
 body {
@@ -26,11 +27,18 @@ h1 {
   margin-top: 0;
 }
 
+h2 {
+  color: var(--highlight-color)!important;
+  font-size: 5em;
+  font-weight: 300;;
+}
+
 h4 {
   font-weight: 300;
   font-size: 3em;
   margin-top: 0.2em;
 }
+
 h4 img {
   width: 3em;
 }
@@ -38,6 +46,11 @@ h4 img {
 h1,h2,h3,h4,h5,h6 {
   color: var(--pink-color);
   font-family: 'Antonio', sans-serif;
+}
+
+h5 {
+  color: var(--highlight-color);
+  font-size: 1.5em;
 }
 
 .container {
@@ -55,6 +68,48 @@ h1,h2,h3,h4,h5,h6 {
 
 .paddingTop {
   padding-top: 3em;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.justify-center {
+  width: 20%;
+  margin: auto;
+}
+
+.links {
+  color: var(--highlight-color);
+  display: flex;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.brand {
+  margin-right: 0.8em;
+}
+
+.textBox {
+  color: var(--highlight-color);
+  text-align: justify;
+  font-size: 1.6em;
+  background: var(--pink-color);
+  padding: 3em;
+  padding-top: 0.1em;
+  padding-bottom: 0.5em;
+  border-radius: 60px;
+  box-shadow: 12px 15px 0px 2px var(--gray-color);
+  margin-bottom: 2em;
+}
+
+.textColor {
+  color: var(--highlight-color);
+  font-size: 1.5em;
+}
+
+.anchor {
+  color: var(--highlight-color);
 }
 
 /* Image Slider */
