@@ -1,4 +1,5 @@
 import React from 'react';
+import { useMediaQuery } from 'react-responsive'
 import Slider from '../elements/Slider';
 
 import Img01 from '../assets/images/lasharly/1.jpg';
@@ -23,10 +24,14 @@ export default function LaSharly() {
                     Img06, Img07, Img08, Img09, Img10,
                     Img11, Img12, Img13, Img14, Img15, Img16];
 
+    const isMobile = useMediaQuery({
+            query: '(max-width: 500px)'
+        })        
+
     return (
         <div className="container">
             <h2 className="text-left">La Sharly</h2>
-            <p style={{height: "5em"}}></p>
+            {!isMobile && <p style={{height: "5em"}}></p>}
             <Slider images={images}/>
         </div>
     )

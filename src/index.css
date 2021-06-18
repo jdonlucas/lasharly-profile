@@ -112,6 +112,20 @@ h5 {
   color: var(--highlight-color);
 }
 
+.sideBySide {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sideElement {
+  width: 50%;
+  margin-left: 2.5em;
+}
+
+.imgSide {
+  width: 25%;
+}
+
 /* Image Slider */
 #leftButton {
   top: 50%;
@@ -134,11 +148,13 @@ h5 {
 
 .imageSlider {
   position: relative;
+  max-width: 35vw; 
+  margin: auto;
 }
 
 .imageSliderDiv img {
   width: 80%;
-  height: 43em;
+  max-height: 60vh;
   animation: fadeMe 2s;
   border-radius: 30%;
 }
@@ -325,4 +341,68 @@ body.open:after {
 }
 .b-link {
   cursor: pointer;
+}
+
+/* Responsive */
+
+@media (max-width: 500px) {
+  h2{
+    margin-top: 0;
+  }
+
+  h1 {
+    font-size: 5em;
+  }
+
+  .container {
+    width: 85%;
+    padding-top: 8em;
+    padding-bottom: 4em;
+  }
+
+  .textBox {
+    padding: 0.5em;
+    box-shadow: 5px 5px 0px 2px var(--gray-color);
+    border-radius: 30px;
+    font-size: 1.4em;
+  }
+
+  .sideBySide {
+    display: block;
+  }
+
+  .sideElement {
+    margin: auto;
+    margin-top: 2em;
+  }
+
+  .justify-center {
+    width: 80%;
+    margin-bottom: 3em;
+  }
+
+  .center {
+    padding-top: 35em;
+  }
+
+  .imgSide {
+    width: 20%;
+  }
+  .imgSide img {
+    padding-top: 3em;
+  }
+
+  .lastImg img {
+    width: 77vw!important;
+    padding-top: 3em;
+    margin: auto;
+  }
+
+  .imageSliderDiv img {
+    width: 100%;
+  }
+
+  .sideElement {
+    width: 100%;
+  }
 }

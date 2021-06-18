@@ -9,12 +9,12 @@ export default function Menu() {
 
     return (
         <div className="container center">
-            <div style={{display: "flex", justifyContent: "space-between"}}>
-                <Link to={'/ezecafe'} style={{width: "25%"}}><img src={Img02} alt="eze" style={{width: "100%"}}/></Link>
-                <Link to={'/proyectos'} style={{width: "25%"}}><img src={Img01} alt="uam" style={{width: "100%"}}/></Link>
+            <div className="sideBySide">
+                <Link to={'/ezecafe'} className="imgSide"><img src={Img02} alt="eze" style={{width: "100%"}}/></Link>
+                <Link to={'/proyectos'} className="imgSide"><img src={Img01} alt="uam" style={{width: "100%"}}/></Link>
             </div>
             <div> 
-                <Link to={'/aboutme'}><img src={Img03} alt="lasharly" style={{width: "30%"}}/></Link>
+                <Link to={'/aboutme'} className="lastImg"><img src={Img03} alt="lasharly" style={{width: "30%"}}/></Link>
             </div>
         </div>
     )

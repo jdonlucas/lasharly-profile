@@ -11,7 +11,7 @@ export default function Contacto() {
         <div className="container">
             <h2>Contacto</h2>
             <div className="textColor">
-                Email: <a href="mailto:karla@ezecafe.com.mx" className="anchor">karla@ezecafe.com.mx</a>
+                Email: <a href="mailto:donlucas@lasharly.me" className="anchor">donlucas@lasharly.me</a>
                 <h5>Links</h5>
                 <div className="justify-center">
                     <a className="links" href="https://www.instagram.com/eze.cafe">
