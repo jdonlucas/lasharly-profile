@@ -148,8 +148,13 @@ h5 {
 
 .imageSlider {
   position: relative;
-  max-width: 35vw; 
+  max-width: 1100px;
   margin: auto;
+}
+
+.imageCanvas {
+  margin-left: 3em;
+  margin-right: 3em;
 }
 
 .imageSliderDiv img {
@@ -404,5 +409,11 @@ body.open:after {
 
   .sideElement {
     width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  #leftButton img, #rightButton img {
+    width: 3.5vw;
   }
 }
